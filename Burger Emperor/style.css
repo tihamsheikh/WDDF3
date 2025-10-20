@@ -3,11 +3,13 @@
     padding: 0;
 }
 
-
 .container {
     max-width: 1440px;
     margin: 0 auto;
 }
+
+
+/*-----------------------------top menu section-----------------------------*/
 
 .top-menu .container {
     padding-top: 40px;
@@ -30,7 +32,7 @@
     color: #3d2513;
 }
 
-.top-menu .logo-column img{
+.top-menu .logo-column img {
     width: 30%;
 }
 
@@ -54,7 +56,7 @@
     font-weight: 600;
 }
 
-.top-menu .menu-bottom li{
+.top-menu .menu-bottom li {
     list-style: none;
     display: inline-block;
     padding: 30px;
@@ -62,7 +64,7 @@
     text-transform: uppercase;
 }
 
-.top-menu .menu-bottom li:last-child{
+.top-menu .menu-bottom li:last-child {
     padding-left: 0;
 }
 
@@ -71,7 +73,7 @@
     grid-template-columns: 1fr 1fr;
 }
 
-.top-menu .menu-column{
+.top-menu .menu-column {
     text-align: right;
 }
 
@@ -97,16 +99,19 @@
     font-family: "Bebas Neue", sans-serif;
 }
 
-.top-menu .moto .moto-left h1, h2, span {
+.top-menu .moto .moto-left h1,
+h2,
+span {
     text-transform: uppercase;
     padding-top: 10px;
 }
 
-.top-menu .moto .moto-left h1, h2{
+.top-menu .moto .moto-left h1,
+.top-menu .moto .moto-left h2 {
     text-shadow: 2px 5px 5px white;
 }
 
-.top-menu .moto .moto-left h1{
+.top-menu .moto .moto-left h1 {
     font-size: 114px;
     font-family: "Alfa Slab One", serif;
     font-weight: 400;
@@ -118,4 +123,355 @@
     font-family: "Alfa Slab One", serif;
     font-weight: 400;
 }
+
+/*-----------------------------Popular section-----------------------------*/
+
+.popular-section .container {
+    font-family: "Bebas Neue", sans-serif;
+    text-transform: uppercase;
+    /* padding-top: 90px;
+    padding-bottom: 70px; */
+    padding-top: 90px;
+    padding-bottom: 40px;
+
+}
+
+.popular-section .row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px 20px;
+    column-gap: 40px;
+}
+
+.popular-section img {
+    width: 100%;
+}
+
+.popular-section .content-left,
+.popular-section .content-right {
+    position: absolute;
+    text-align: left;
+    top: 30px;
+    left: 20px;
+    color: #fff;
+}
+
+.popular-section .left-column,
+.popular-section .top-food,
+.popular-section .bottom-food {
+    position: relative;
+}
+
+.popular-section h4 {
+    font-size: 25px;
+}
+
+.popular-section h2 {
+    font-size: 42px;
+    text-decoration: none;
+    line-height: 14px;
+}
+
+.popular-section .bottom-food {
+    padding-top: 32px;
+}
+
+.popular-section .bottom-food .content-right {
+    padding-top: 30px;
+}
+
+/*-----------------------------Order Now section-----------------------------*/
+
+.order-now-section {
+    color: #3d2514;
+}
+
+.order-now-section .container {
+    text-align: center;
+    padding: 10px 10px;
+}
+
+.order-now-section .title-description {
+    padding-bottom: 20px;
+}
+
+.order-now-section .title-description h4 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 25px;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    border: 1px solid #ffc045;
+    display: inline-block;
+    padding: 12px 26px 8px 26px;
+    background: #ffc045;
+    margin-bottom: 30px;
+}
+
+.order-now-section .title-description h1 {
+    font-family: "Alfa Slab One", serif;
+    font-size: 50px;
+    text-transform: uppercase;
+    padding-bottom: 16px;
+}
+
+.order-now-section .title-description p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    margin-right: 220px;
+    margin-left: 220px;
+}
+
+
+.order-now-section .burger-list {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 10px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.order-now-section .burger-list .content {
+    /* border: 1px solid black; */
+    padding: 20px 10px;
+    padding-bottom: 40px;
+}
+
+.order-now-section .burger-list .middle-content {
+    margin-top: 28px;
+}
+
+.order-now-section .burger-list img {
+    width: auto;
+    padding-bottom: 10px;
+}
+
+.order-now-section .burger-list h2 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 38px;
+    padding-bottom: 10px;
+}
+
+.order-now-section .burger-list p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    padding-bottom: 40px;
+}
+
+.order-now-section .burger-list a {
+    font-family: "Alfa Slab One", serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid black;
+    background: #bf2222;
+    padding: 14px 32px;
+}
+
+/*-----------------------------Floating section-----------------------------*/
+
+.floating-section .container {
+    color: #3d2514;
+    padding-top: 20px;
+    padding-bottom: 90px;
+}
+
+.floating-section .main-part {
+    max-width: 1290px;
+    /* border: 1px solid black; */
+    box-shadow: 36px 36px 50px rgba(0, 0, 0, 0.193);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 28px 28px;
+    padding-left: 34px;
+}
+
+.floating-section .left-half {
+    padding-top: 64px;
+    padding-right: 60px;
+    padding-left: 40px;
+}
+
+.floating-section .left-half h4 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 30px;
+    line-height: 8px;
+}
+
+.floating-section .left-half h2 {
+    font-family: "Alfa Slab One", serif;
+    font-size: 42px;
+    margin-bottom: 40px;
+}
+
+.floating-section .left-half p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+}
+
+.floating-section .right-half img {
+    width: auto;
+}
+
+/*-----------------------------Floating section-----------------------------*/
+
+.footer-section {
+    margin-bottom: 50px;
+    padding-right: 64px;
+}
+
+.floating-section a {
+    text-decoration: none;
+}
+
+.footer-section .container {
+    height: 560px;
+    background: url(images/footer_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-position: center center; */
+}
+
+.footer-section .main-part {
+    /* border: 1px solid yellow; */
+    color: #fff;
+    text-align: center;
+    padding-bottom: 0px;
+}
+
+.footer-section .row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+.footer-section .left-half {
+    text-align: left;
+}
+
+.footer-section .left-half .top-half {
+
+    padding-left: 34px;
+    padding-top: 90px;
+}
+
+.footer-section .left-half .top-half img {
+    margin-right: 40px;
+}
+
+.footer-section .left-half .bottom-half p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    margin-left: 46px;
+    margin-top: 20px;
+    margin-right: 160px;
+    padding: 0;
+}
+
+.footer-section .left-half .bottom-half {
+    position: relative;
+}
+
+.footer-section .left-half .bottom-half span {
+    /* border: 1px solid yellow; */
+    position: absolute;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 16px;
+    padding-left: 46px;
+    bottom: -220px;
+    left: 0px;
+    /* padding-top: 500px; */
+    /* line-height: 370px; */
+
+}
+
+
+.footer-section .right-half {
+    position: relative;
+}
+
+.footer-section .right-half .top-half {
+    text-align: left;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 20px;
+    position: absolute;
+    bottom: -40px;
+    left: 240px;
+}
+
+.footer-section .right-half .top-half span {
+    position: relative;
+    top: -10px;
+    padding-left: 10px;
+}
+
+.footer-section .right-half .top-half .road-span {
+    top: -18px;
+}
+
+.footer-section .right-half .bottom-half {
+    position: absolute;
+    bottom: -240px;
+    right: 24px;
+    padding: 0;
+    margin: 0;
+}
+
+
+/*-----------------------------Form section-----------------------------*/
+
+.form-section .container {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+
+.form-section .title-part h3{
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 30px;
+    
+}
+
+.form-section .title-part h1{
+    font-family: "Alfa Slab One", serif;
+    font-size: 50px;
+}
+
+.form-section .form-part {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 18px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.form-section .main-form {
+    font-family: "Alfa Slab One", serif;
+    
+}
+
+.form-section .form-part input{
+    width: 100%;
+    box-sizing: border-box;
+    margin: 5px 0px;
+    padding: 12px 10px;
+    font-size: 20px;
+    color: #000;
+}
+
+.form-section .form-part .right-form .submit-button {
+    background: #bf2222;
+    border: none;
+    padding: 14px;
+    border-radius: 5px;
+    color: #fff;
+}
+
+
+
+
+
 
