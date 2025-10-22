@@ -7,57 +7,67 @@
     max-width: 1440px;
     margin: 0 auto;
 }
+
 /*----------------------------Menu Section----------------------------*/
-.top-menu-section {
-    background: skyblue;
+.top-menu-section,
+.menu-section {
+    background: black;
     padding: 20px 0px;
 }
 
-.top-menu-section .nav-row {
+.top-menu-section .nav-row,
+.menu-section .nav-row {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 
-.top-menu-section .nav-bar-right h1{
+.top-menu-section .nav-bar-right h1,
+.menu-section .nav-bar-right h1 {
     font-family: "Playwrite DE SAS", cursive;
     font-size: 30px;
-    color: purple;
+    color: white;
 }
 
-.top-menu-section .nav-bar-left {
+.top-menu-section .nav-bar-left,
+.menu-section .nav-bar-left {
     font-family: "Bitcount Grid Single", system-ui;
+    text-shadow: 4px 0px 0px white;
     font-size: 26px;
     text-align: center;
     padding-top: 10px;
 }
 
-.top-menu-section .nav-bar-left li{
+.top-menu-section .nav-bar-left li,
+.menu-section .nav-bar-left li {
     display: inline-block;
     list-style: none;
     padding: 0px 10px;
 }
 
-.top-menu-section .nav-bar-left a {
+.top-menu-section .nav-bar-left a,
+.menu-section .nav-bar-left a {
     text-decoration: none;
 }
 
-.top-menu-section .nav-bar-left a:hover {
-    background: rgb(106, 213, 255);
+.top-menu-section .nav-bar-left a:hover,
+.menu-section .nav-bar-left a:hover {
+    background: white;
     padding: 29px 10px;
 }
+
 /*----------------------------Individual Section----------------------------*/
 
 .individual-info-section {
     padding: 40px 0px;
 }
 
-.individual-info-section .row{
+.individual-info-section .row {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 20px;
 }
 
-.individual-info-section .left-column{
+.individual-info-section .left-column {
     text-align: center;
 }
 
@@ -65,6 +75,7 @@
     font-size: 30px;
     padding-top: 20px;
     padding-bottom: 10px;
+
 }
 
 .individual-info-section .left-column p {
@@ -81,59 +92,326 @@
 
 .individual-info-section .right-column {
     padding-top: 70px;
+    border: 1px solid black;
+    box-shadow: 5px 5px black;
+}
+
+.individual-info-section .right-column h4 {
+    padding-bottom: 40px;
+    padding-left: 20px;
+}
+
+.individual-info-section .right-column li {
+    list-style: none;
+    padding-left: 4px;
 }
 
 /*----------------------------Mission&Vission Section----------------------------*/
-
 .mission-vision-section {
     text-align: center;
-    padding: 20px 0px;
+    padding: 60px 0;
+    background: white;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
 }
 
-.mission-vision-section .row{
+.mission-vision-section .container h1 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.mission-vision-section .row {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 30px;
 }
 
+.mission-vision-section .left-column,
+.mission-vision-section .right-column {
+    border: 2px solid black;
+    padding: 30px;
+    box-shadow: 5px 5px 0 black;
+}
+
+.mission-vision-section .left-column:hover,
+.mission-vision-section .right-column:hover {
+    transform: translateY(5px);
+}
 
 /*----------------------------Service Section----------------------------*/
 
+
 .service-section {
     text-align: center;
-    padding: 20px 0px;
+    padding: 60px 0;
+    background-color: #f9f9f9;
+}
+
+.service-section h1 {
+    margin-bottom: 40px;
+    font-size: 36px;
+    text-transform: uppercase;
+    display: inline-block;
+    padding-bottom: 10px;
 }
 
 .service-section .row {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px;
+}
+
+.service-section .left-column,
+.service-section .middle-column,
+.service-section .right-column {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.service-section .service-top,
+.service-section .service-bottom {
+    border: 2px solid black;
+    background-color: white;
+    padding: 25px;
+    box-shadow: 5px 5px 0 black;
+}
+
+.service-section .service-top:hover,
+.service-section .service-bottom:hover {
+    transform: translateY(5px);
 }
 
 /*----------------------------Client Feedback Section----------------------------*/
-
 .client-feedback-section {
-    padding: 30px 0px;
+    padding: 60px 0;
+    background-color: white;
 }
 
 .client-feedback-section .row {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    justify-items: center;
 }
 
 .client-feedback-section .content {
     text-align: center;
-    border: 1px solid black;
-    max-width: 330px;
+    border: 2px solid black;
+    background-color: #fdfdfd;
+    box-shadow: 5px 5px 0 black;
+    padding: 20px;
+}
+
+.client-feedback-section .content:hover {
+    transform: translateY(6px);
 }
 
 .client-feedback-section img {
-    width: 90%;
+    width: 100%;
+    max-width: 200px;
+    border-radius: 50%;
+    border: 2px solid black;
+    margin-bottom: 15px;
 }
 
-.client-feedback-section .content p{
-    max-width: 300px;
-    padding-left: 14px;
+.client-feedback-section h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.client-feedback-section h5 {
+    font-weight: normal;
+    font-size: 15px;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.client-feedback-section p {
+    font-size: 14px;
+    line-height: 30px;
 }
 
 
+/* ---------------------------- Footer Section ---------------------------- */
+
+.footer-section {
+    text-align: center;
+    background: black;
+    color: white;
+    padding: 20px 0;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    letter-spacing: 1px;
+    border-top: 3px solid white;
+}
+
+/*--------------------------------about page css-----------------------------------*/
+/*----------------------------Title Section----------------------------*/
+
+.menu-section {
+    padding: 16px 0px;
+}
+
+.title-section {
+    /* text-align: center; */
+    padding-top: 100px;
+    padding-bottom: 100px;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+.title-section .top-title {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.title-section .right-column {
+    text-align: center;
+}
+
+.title-section .right-column img {
+    width: 50%;
+    border-radius: 50%;
+    border: 2px solid green;
+}
+
+.title-section .left-column {
+    padding-top: 50px;
+}
+
+.title-section .left-column h1 {
+    font-size: 80px;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+}
+
+.title-section .left-column h3 {
+    font-size: 50px;
+    text-transform: uppercase;
+    padding-bottom: 30px;
+}
+
+.title-section .left-column p {
+    font-size: 20px;
+    text-transform: uppercase;
+    max-width: 600px;
+}
+
+
+/*----------------------------Title Section----------------------------*/
+
+.biography-section .container{
+    font-family: "Titillium Web", sans-serif;
+    padding-bottom: 20px;
+}
+
+.biography-section .main-part p{
+    text-align: center;
+    font-size: 24px;
+    line-height: 46px;
+}
+
+/*----------------------------Clent List Section----------------------------*/
+
+.existing-client-section {
+    text-align: center;
+    padding: 30px 0px;
+}
+
+
+.existing-client-section .row{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+     gap: 30px;
+}
+
+
+
+.existing-client-section .top-part h2{
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 40px;
+    padding-bottom: 30px;
+    
+}
+
+.existing-client-section .top-part h4{
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 20px;
+    max-width: 1000px;
+    padding-bottom: 50px;
+    padding-left: 220px;
+}
+
+.existing-client-section .left-column,
+.existing-client-section .right-column {
+    padding: 26px 20px;
+    padding-bottom: 0;
+    border: 2px dashed black;
+    display: inline-block;
+}
+
+.existing-client-section .content  {
+    font-size: 30px;
+    padding-bottom: 30px;
+}
+
+.existing-client-section .left-column:hover,
+.existing-client-section .right-column:hover {
+    background: #000;
+    color: #fff;
+    border: 1px dashed #fff;
+}
+
+/*-------------------Skill Section---------------------*/
+
+.skill-section {
+    background-color: #fff;
+    color: #000;
+    padding: 60px 0;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.section-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 42px;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+}
+
+.skills {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.skill {
+    border: 2px dashed #000;
+    padding: 25px;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+.skill:hover {
+    background-color: #000;
+    color: #fff;
+    border: 2px dashed #fff;
+}
+
+.skill h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.skill p {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 26px;
+}
 
 
