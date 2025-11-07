@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact form</title>
+
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!--Custom CSS-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+
+
+
+    <nav class="navbar navbar-expand-lg bg-success ">
+        <div class="container bg-danger ">
+            <a class="navbar-brand text-white fw-bold">War Archive</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-link active text-white" aria-current="page" href="index.html">Home</a>
+                    <a class="nav-link text-white" href="documents.html">Documents</a>
+                    <a class="nav-link text-white" href="interviews.html">Interviews</a>
+                    <a class="nav-link text-white" href="gallery.html">Photographs Gallery</a>
+                    <a class="nav-link text-white" href="contact.html">Contact Form</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="heading" style="padding-top: 10px;">
+        <div class="container">
+            <img src="images/heading.jpg" alt="Snow" style="height:200px; width: 100%; border: 4px solid black;">
+
+            <div class="centered">
+                <h1 class="fw-bold">Contact Form</h1>
+                <h3 class="fw-bold">Liberation War Archive</h3>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="form-section mt-3">
+        <div class="container">
+            
+            <div class="card my-5">
+                <h3 class="fw-bold my-4">Liberation War Archive</h3>
+                
+                <form class="ps-5 pe-5">
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="">
+                    <label for="floatingInput">Name</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput">Email</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="">
+                    <label for="floatingInput">Subject</label>
+                </div>
+                <div class="form-floating">
+                    <textarea class="form-control" placeholder="Write a message" id="floatingTextarea"
+                        style="height:100px;"></textarea>
+                    <label for="floatingTextarea">Message</label>
+                </div>
+                <div class="mb-3">
+                    <label for="formFile" class="form-label"></label> 
+                    <input class="form-control" type="file" id="formFile">
+                    
+                </div>
+
+                <button type="submit" class="btn btn-primary mb-5 mt-3">Submit</button>
+            </form>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="text-center p-2 text-white bg-dark mt-auto">
+        <div class="container">
+            © 2021 Tiham | All Reserved.
+        </div>
+    </footer>
+
+
+
+    <!--Bootstrap Js-->
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
