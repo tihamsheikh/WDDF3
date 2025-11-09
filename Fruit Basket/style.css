@@ -1,0 +1,38 @@
+#carouselExampleAutoplaying img {
+    height: 600px;
+    object-fit: cover;
+}
+
+.intoduction-section img {
+    height: 450px;
+    object-fit: cover;
+}
+
+.guides-section li {
+    cursor: pointer;
+}
+
+
+/* Container holding the image and the text */
+.header-section .container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+/* Centered text */
+.header-section .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.header-section img {
+    object-fit: cover;
+}
+
+.header-section h1,
+.header-section h3 {
+    text-shadow: 0px 0px 10px #006600;
+}
