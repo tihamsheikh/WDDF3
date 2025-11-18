@@ -81,13 +81,12 @@
                 </div>
                 <div class="flex-column col-lg-6 col-sm-12">
                     <div class="card p-3">
-                        <form>
+                        <form id="contact-form">
                             <h2 class="card-title mb-4">Contact Us</h2>
                             <div class="mb-3">
                                 <label for="exampleInputEmail1" class="form-label">Name</label>
-                                <input type="text" class="form-control" id="exampleInputEmail1"
+                                <input type="text" class="form-control" id="exampleInputName"
                                     aria-describedby="emailHelp">
-                                
                             </div>
                             <div class="mb-3">
                                 <label for="exampleInputEmail1" class="form-label">Email</label>
@@ -110,16 +109,22 @@
         </div>
     </section>
 
-
+    
     <footer class="py-2 text-white bg-dark text-center">
-        <div class="container">
             &copy; 2026 Fardin Sheikh | All Rights Reserved.
-        </div>
+            <div id="timePlace"></div>
     </footer>
-
-
+    
+    
     <!--Bootstrap Js-->
     <script src="js/bootstrap.bundle.min.js"></script>
+
+    <script src="script.js"></script>
+    <script>
+        const time = new Date();
+        document.getElementById("timePlace").textContent = time;        
+    </script>
+
 </body>
 
 </html>
