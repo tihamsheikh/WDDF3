@@ -1,0 +1,66 @@
+
+
+.slider-section img {
+    object-fit: cover;
+    height: 800px;
+}
+
+.heading-section img {
+    object-fit: cover;
+    height: 600px;
+}
+
+.heading-section .container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+/* Centered text */
+.heading-section .centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.introduction-section img {
+    object-fit: cover;
+    height: 500px;
+}
+
+.main-docs-section img {
+  height: 300px;
+  object-fit: cover;
+}
+
+.main-docs-section h1,
+.main-interview-section h1,
+.gallery-section h1,
+.introduction-section h1,
+.form-section h1 {
+  color: green;
+  text-shadow: 0px 0px 5px red;
+}
+
+.main-docs-section h2,
+.main-interview-section h2,
+.gallery-section h2,
+.introduction-section h2,
+.form-section h3 {
+  text-shadow: 0px 0px 5px green;
+}
+
+.main-docs-section .card {
+  box-shadow: 0px 0px 10px black;
+}
+
+.gallery-section img {
+  object-fit: cover;
+  height: 300px;
+}
+
+.form-section a {
+  text-decoration: none;
+  color: black;
+}

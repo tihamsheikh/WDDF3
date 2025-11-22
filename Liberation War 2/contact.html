@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!--Nav Bar Section-->
+    <section class="navbar-section bg-dark ">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg ">
+                <div class="container-fluid">
+                    <a class="navbar-brand text-white fw-bold fs-3" href="#">Warchive</a>
+                    <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav ms-auto">
+                            <a class="nav-link text-white " href="index.html">Home</a>
+                            <a class="nav-link text-white" href="documents.html">Document</a>
+                            <a class="nav-link text-white" href="interview.html">Interview</a>
+                            <a class="nav-link text-white" href="gallery.html">Gallery</a>
+                            <a class="nav-link text-primary active" href="contact.html">Contact</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </section>
+
+     <!--Heading section-->
+    <section class="heading-section my-3">
+        <div class="container">
+            <div class="container">
+                <img src="images/heading.png" alt="Snow" style="width:100%;">
+                <div class="centered"></div>
+            </div>
+        </div>
+    </section>  
+
+    <!--Contact Section-->
+    <section class="form-section mt-3">
+        <div class="container">
+            <h1 class="text-center my-2">Contact Us</h1>
+            <div class="row">
+                <div class="flex-column col-lg-6 col-sm-12">
+                    <div class="card my-5">
+                        <h3 class="my-4 ps-5 pe-5">Submit a Meassage</h3>
+
+                        <form class="ps-5 pe-5" id="contact-form">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="nameId" placeholder="">
+                                <label for="floatingInput">Name</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control" id="emailId"
+                                    placeholder="name@example.com">
+                                <label for="floatingInput">Email</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="floatingInput" placeholder="">
+                                <label for="floatingInput">Subject</label>
+                            </div>
+                            <div class="form-floating">
+                                <textarea class="form-control" placeholder="Write a message" id="floatingTextarea"
+                                    style="height:100px;"></textarea>
+                                <label for="floatingTextarea">Message</label>
+                            </div>
+                            <div class="mb-3">
+                                <label for="formFile" class="form-label"></label>
+                                <input class="form-control" type="file" id="formFile">
+
+                            </div>
+
+                            <button type="submit" class="btn btn-primary mb-5 mt-3">Submit</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="flex-column col-lg-6 col-sm-12">
+                    <div class="card my-5 p-3" style="height: 585px;">
+                        <h3 class="ms-3 my-2">Direct Contact</h3>
+                        <div class="card-body ">
+                            <p> <b>Email: </b><a href="mailto:example@gmail.com">example@gmail.com</a></p>
+                            <p> <b>Phone: </b><a href="tel:1287 23746 2873">+1287 23746 2873</a></p>
+                            <p> <b>Address: </b>Dhaka Mini, Bangladesh</p>
+                            <p> <b>Head Office: </b>Dhaka, Bangladesh</p>
+                            <p> <b>Our Admins: </b>
+                                <ul>
+                                    <li>Admin 1</li>
+                                    <li>Admin 2</li>
+                                    <li>Admin 3</li>
+                                </ul>
+                            </p>
+                            
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <footer class="text-center bg-dark text-white py-2">
+        &copy; 2026 Fardin Sheikh | All Rights Reserved.
+        <div id="timeStamp"></div>
+    </footer>
+
+    <!--Bootstrap Js-->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!--Custom Js-->
+    <script src="script.js"></script>
+    <script>
+        const time = new Date();
+        document.getElementById("timeStamp").textContent = time;
+
+
+        const form = document.getElementById("contact-form");
+
+        form.addEventListener("submit",
+            function(event){
+                const name = document.getElementById("nameId").value.trim();
+                const email = document.getElementById("emailId").value;
+
+                if (name === "" || email === ""){
+                    alert("Empty Submission is Not Allowed!!");
+                    event.preventDefault();
+                }
+                else {
+                    alert("Form Submited");
+                }
+            }
+        );
+    </script>
+</body>
+
+</html>
