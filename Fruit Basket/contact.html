@@ -25,7 +25,7 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link active fs-4" aria-current="page" href="index.html">Home</a>
+                            <a class="nav-link fs-4" aria-current="page" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link fs-4" href="guides.html">Guides</a>
@@ -37,7 +37,7 @@
                             <a class="nav-link fs-4" href="control.html">Control</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link fs-4" href="contact.html">Contact</a>
+                            <a class="nav-link active fs-4" href="contact.html">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -121,8 +121,14 @@
 
     <script src="script.js"></script>
     <script>
-        const time = new Date();
-        document.getElementById("timePlace").textContent = time;        
+        function live_time(){
+            const time = new Date();
+            document.getElementById("timePlace").textContent = time;
+        }       
+
+        live_time();
+        setInterval(live_time, 1000);
+
     </script>
 
 </body>
