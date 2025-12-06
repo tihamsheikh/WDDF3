@@ -1,0 +1,45 @@
+.carousel-inner {
+    height: 500px;
+    object-fit: cover;
+    
+}
+
+.title-section img {
+    height: 300px;
+    object-fit: cover;
+}
+
+ /* Container holding the image and the text */
+.title-section .container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+/* Centered text */
+.title-section .centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+} 
+
+.feedback-section img{
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid blue;
+    box-shadow: 0px 0px 10px black;
+}
+
+.biography-section img{
+    height: 550px;
+    object-fit: cover;
+    
+}
+
+.form-section a {
+    text-decoration: none;
+    color: black;
+}
