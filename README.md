@@ -2,12 +2,12 @@ Here’s a polished **README.md** for your front-end projects repository, tailor
 
 ---
 
-```md
-# 🌟 Front-End Projects Collection
 
-This repository contains a collection of small front-end projects built using **HTML**, **CSS**, **Bootstrap**, and a little **JavaScript**.  
-Each project demonstrates different UI designs, layouts, and interactive elements, showcasing hands-on front-end development skills.
-```
+## 🌟 Front-End Projects Collection
+
+  This repository contains a collection of small front-end projects built using **HTML**, **CSS**, **Bootstrap**, and a little **JavaScript**.  
+  Each project demonstrates different UI designs, layouts, and interactive elements, showcasing hands-on front-end development skills.
+
 ---
 
 ## 🗂 Projects Included
